@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+main{
+  display: flex;
+    /* justify-content: center; */
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.task-list{
+  display: flex;
+}
+.chec-li{
+  display: flex;
+  flex-direction: row;
+
+}
+
+li{
+  list-style: none;
+  padding: 0px 10px 10px 10px;
+}
+
+
+.edit{
+  background-color: rgb(4, 143, 207);
+  color: white;
+  margin-right: 5px;
+}
+
+.del{
+  background-color: rgb(207, 11, 4);
+  color: white;
+}
