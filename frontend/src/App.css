@@ -2,11 +2,20 @@
   text-align: center;
 }
 
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,37 +28,48 @@
   color: #61dafb;
 }
 
-main{
-  display: flex;
-    /* justify-content: center; */
-    margin-top: 50px;
-    align-items: center;
-    flex-direction: column;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
+.main{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+}
 
 .task-list{
   display: flex;
-}
-.chec-li{
-  display: flex;
   flex-direction: row;
-
+  justify-content: center;
+  margin-top: 5px;
 }
 
 li{
+  margin: 0px 8px 0px 8px;
   list-style: none;
-  padding: 0px 10px 10px 10px;
 }
 
+button{
+  margin-left: 2px;
+}
 
 .edit{
-  background-color: rgb(4, 143, 207);
+  background-color: #17a7cf;
   color: white;
-  margin-right: 5px;
 }
 
 .del{
-  background-color: rgb(207, 11, 4);
+  background-color: #d60808;
   color: white;
 }
